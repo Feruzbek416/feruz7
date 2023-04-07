@@ -1,0 +1,29 @@
+h1 {
+    color: black;
+}
+a{
+    color: black;
+    margin-top: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+.kurs1{
+    color: blue;
+}
+.kurs2{
+    color: orange;
+}
+.kurs3{
+    color: #797D7F;
+}
+.kurs4{
+    color: purple;
+}
+.sam{
+    color: purple;
+}
+
+
+.salom{
+    color: red;
+}

@@ -1,0 +1,14 @@
+{% extends 'baza.html' %}
+{% load static %}
+
+    
+    {% block content %}
+    <p class="salom">salom dunyo</p>
+    <h1 class="kurs1">Python dasturlash tili</h1>
+    {% for new in object_list %}
+    <h2 class="sam">{{new.title}}</h2>
+    <h3>{{new.text}}</h3>
+    {% endfor %}
+    {% endblock content %}
+
+  

@@ -1,0 +1,10 @@
+{% extends 'baza.html' %}
+
+    {% block content %}
+    <h1>2022-yilgi yangiliklar</h1>
+    {% for new in context %}
+    <h2 class="news1">{{new.name}} {{new.surname}}</h2>
+    <h2 class="news2">{{new.add_date}}</h2>
+    <img class="img" src="{{new.imgsss.url}}" alt="">
+    {% endfor %}
+    {% endblock content %}

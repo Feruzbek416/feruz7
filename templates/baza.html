@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <style>
+
+        a {
+            color: black;
+            margin-top: 10px;
+            margin: 10px;
+            text-decoration: none;
+            
+        }
+        .salom{
+            color: red;
+        }
+        .kurs1{
+            color: blue;
+        }
+        .news1{
+            color: blueviolet;
+        }
+        .news2{
+            color: chocolate;
+        }
+        .img{
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <a href="{% url 'kurs1' %}">kurs1</a>
+    <a href="{% url 'kurs2' %}">kurs2</a>
+    <a href="{% url 'kurs3' %}">kurs3</a>
+    <a href="{% url 'kurs4' %}">kurs4</a>
+    <a href="{% url 'registr' %}">registr</a>
+    <a href="{% url 'komp' %}">komp</a>
+    <a href="{% url 'ftf' %}">ftf</a>
+    <a href="{% url 'news' %}">news</a>
+    {% block content %}
+
+    {% endblock content %}
+</body>
+</html>

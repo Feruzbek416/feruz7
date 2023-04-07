@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'baza.html' %}
+    {% block content %}
+    <h1>Registr bo'limi</h1>
+    {% for new in object_list %}
+    <h2>{{new.name}} {{new.surname}}</h2>
+    
+    <h3>{{new.email}}</h3>
+    <h3>{{new.year}}</h3>
+    {% endfor %}
+    {% endblock content %}
+</body>
+</html>
